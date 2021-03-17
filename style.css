@@ -1,0 +1,12 @@
+.inicio {
+  border: 1px solid black; 
+  height: 90vh;
+  background-color: black !important;
+}
+
+h1 { 
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  color: white;
+}
