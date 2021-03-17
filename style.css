@@ -1,12 +1,54 @@
-.inicio {
-  border: 1px solid black; 
-  height: 90vh;
-  background-color: black !important;
+:root { 
+  --gris: #858585b3;
+  --grisDos: #9f9f9f; 
+  --grisTres: #c8c8c8; 
+  --grisCuatro: #e3e3e3; 
+  --grisCinco: 	#f1f1f1; 
 }
 
-h1 { 
+.navbar { 
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  background-color: var(--gris);
+}
+
+.cuadro {
+  height: 86vh;
+  border-radius: 10px;
+  margin: 2% 0;
+}
+
+.fun { 
+  background-color: rgba(245, 69, 245, 0.459);
+  width: 12%;
+  height: 12%;
+  margin: auto;
+  color: black;
+  border-radius: 10px;
+}
+
+/* h1, h2, p { 
   display: flex;
   justify-content: center;
   align-items: center;  
-  color: white;
+  color: black;
+} */
+
+#home { 
+  margin-top: 11vh !important; 
+  background-color: var(--grisCinco);
+
+}
+
+/* #home > h1 { 
+
+} */
+
+#about { 
+  background-color: var(--grisCuatro);
+}
+
+#projects { 
+  background-color: var(--grisTres);
 }
