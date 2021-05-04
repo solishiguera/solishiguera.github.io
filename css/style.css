@@ -8,6 +8,17 @@
 
 body { 
   background-color: var(--grisCinco);
+  font-family:'Times New Roman', Times, serif;
+}
+
+.img-thumbnail{ 
+  border: 0px;
+}
+
+.my-picture { 
+  border-radius: 20px;
+  border: 1px solid black; 
+  height: 20em;
 }
 
 .navbar { 
@@ -15,6 +26,7 @@ body {
   padding: 5px;
   margin: 5px;
   background-color: var(--gris);
+  font-size: 25px;
 }
 
 .cuadro {
@@ -32,14 +44,20 @@ body {
 
 #typeText { 
   color: black;
-  font: 100px 'Times New Roman', Times, serif;
-  margin: auto !important;
+  font-size: 100px;
 }
 
-#about { 
-  background-color: var(--grisCuatro);
+.wrapper {
+  min-height: 100%;
 }
 
-#projects { 
-  background-color: var(--grisTres);
+.fa { 
+  color: white;
+  text-decoration: none;
+}
+
+.fa:hover { 
+  color: var(--grisDos);
+  text-decoration: none;
+  cursor: pointer;
 }
