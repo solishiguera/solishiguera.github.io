@@ -1,0 +1,76 @@
+:root { 
+  --gris: #858585b3;
+  --grisDos: #9f9f9f; 
+  --grisTres: #c8c8c8; 
+  --grisCuatro: #e3e3e3; 
+  --grisCinco: 	#f1f1f1; 
+}
+
+body { 
+  background-color: var(--grisCuatro);
+}
+
+.navbar { 
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  background-color: var(--gris);
+}
+
+.cuadro {
+  height: 86vh;
+  border-radius: 10px;
+  margin: 2% 0;
+}
+
+/* h1, h2, p { 
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  color: black;
+} */
+
+#home { 
+  margin-top: 11vh !important;
+  background-color: black;
+  border: 27px solid var(--grisDos) !important;
+  min-height: 87vh;
+  height: 87vh;
+  padding: 0;
+
+}
+
+#about { 
+  background-color: var(--grisCuatro);
+}
+
+#projects { 
+  background-color: var(--grisTres);
+}
+
+.line-1{
+  position: relative;
+  top: 10%;  
+  width: 20em;
+  /* margin: 0 auto; */
+  border-right: 5px solid rgba(255,255,255,.75);
+  font-size: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+animation: typewriter 4s steps(44) 1s 1 normal both,
+           blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+from{width: 0;}
+to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}

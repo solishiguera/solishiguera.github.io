@@ -1,0 +1,9 @@
+.cont { 
+  background-color: green;
+  margin: auto !important;
+}
+
+#fix { 
+  width: 45vw;
+  height: 45vw;
+}
