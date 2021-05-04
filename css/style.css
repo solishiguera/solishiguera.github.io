@@ -42,6 +42,10 @@ body {
   margin-top: 11vh !important;
 }
 
+#projects{
+  width: 98vw !important;
+}
+
 #typeText { 
   color: black;
   font-size: 100px;
