@@ -4,6 +4,7 @@
   --grisTres: #c8c8c8; 
   --grisCuatro: #e3e3e3; 
   --grisCinco: 	#f1f1f1; 
+  background-color: black;
 }
 
 
@@ -16,11 +17,9 @@ li {
 }
 
 #home {
-  background-image: url("/images/apollo1.jpeg");
   background-size: cover;
   background-attachment: fixed;
   margin: 0;
   padding: 0;
   height: 85vh;
-  background-color: aqua;
 }

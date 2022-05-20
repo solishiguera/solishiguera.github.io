@@ -7,188 +7,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diego Solis</title>
   <link rel="icon" href="/images/d.svg">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="bg-light bg-gradient">
-  <!-- 
-    - HTML, con los Tags más utilizados: <table> <input> <button> <a> <form>
-    - Agrega tags semánticos para la estructura de la página: <section>
-    - Agrega Javascript 
-  -->
-  <header class="bg-secondary bg-gradient text-white p-1">
-    <h1>Bienvenido, internauta!</h1>
-  </header>
-  <!-- Navbar -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="/images/apollo-logo.webp" alt="" width="30" height="auto" class="d-inline-block align-text-top">
-        Programa Apollo
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#acerca-de">Acerca de</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#datos-curiosos">Interesante</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#misiones">Misiones</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#ubicacion">Ubicación</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<body>
+  <div class="wrapper">
+    <style>
+      body {
+        background-color: black;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+      }
 
-  <div id="home"></div>
-  <main>
-    <div id="acerca-de" class="container p-3 text-center">
-      <h3 class="fs-1">Acerca de</h3>
-      <article class="text-center fs-5">
-        El programa Apollo fue un programa espacial desarrollado por
-        la NASA que comenzó en la década de los 60s, y concluyó a principios
-        de los años 70. Por primera vez en la historia (1969) los humanos
-        aterrizaron en la Luna. Este programa, a su vez, marcó el inicio de la
-        carrera espacial contra la Unión Soviética durante la Guerra Fría.
-        En 1969, Neil Armstrong, junto con Buzz Aldrin, se convirtieron en los
-        primeros humanos en aterrizr en la luna.
-      </article>
-    </div>
+      .title {
+        border: 2px solid aliceblue;
+        padding: 25px;
+        border-radius: 5px;
+        text-align: center;
+        width: 50vw;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+      }
 
-    <div id="datos-curiosos" class="container p-3">
-      <h3 class="fs-1 text-center">Datos interesantes sobre el programa Apollo</h3>
+      .text { 
+        color: aliceblue;
+        font-size: 10vh;
+      }
 
-      <ul class="fs-5">
-        <li>Inicialmente, las misiones Apolo no estaban destinadas a aterrizar en la Luna, sino simplemente a lanzar una
-          nave espacial de tres personas. De hecho, fue el presidente Kennedy quien fijó el nuevo objetivo de aterrizar
-          en la Luna en su discurso ante el Congreso el 25 de mayo de 1961.</li>
-        <img src="/images/apollo2.jpg" class="rounded img-fluid" alt="John F. Kennedy">
-        <li>Cuando se ajusta por inflación, el costo total del programa ahora está más cerca de $ 153 mil millones de
-          dólares. El programa Apollo fue el proyecto de investigación y desarrollo más grande jamás realizado en
-          tiempos de paz, y en su punto máximo empleó a 400,000 personas en todo EE. UU.</li>
-        <img src="/images/apollo3.jpeg" class="rounded img-fluid" alt="Astronauta">
-        <li>La NASA sabía muy poco sobre la luna antes de las misiones Apolo, incluso si albergaba microbios peligrosos
-          o "gérmenes espaciales". Con esto en mente, las tripulaciones de los Apolo 11, 12 y 14 fueron puestas en
-          cuarentena después de regresar a casa de sus alunizajes.</li>
-        <img src="/images/apollo4.jpg" class="rounded img-fluid" alt="Cuarentena">
-      </ul>
+      .wrapper {
+        position: relative;
+        min-height: 100vh !important;
+      }
+
+      .fa {
+        color: white;
+        text-decoration: none;
+      }
+
+      .fa:hover {
+        color: whitesmoke;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 700px) {
+        .title {
+          border: 2px solid aliceblue;
+          padding: 25px;
+          border-radius: 5px;
+          text-align: center;
+          width: 75vw;
+          position: absolute;
+          top: 13%;
+          left: 13%;
+        }
+      }
+
+    </style>
+
+    <div class="title">
+      <span class="text">
+        I'll be back soon!
+      </span>
+      <p style="color: aliceblue;">Contact information</p>
+      <section class="mb-4">
+        <a href="https://twitter.com/DiegoSolisH00" class="fa fa-twitter fa-2x m-2"></a>
+        <a href="https://github.com/solishiguera" class="fa fa-github fa-2x m-2"></a>
+        <a href="https://www.linkedin.com/in/diego-solis-53b01319a/" class="fa fa-linkedin fa-2x m-2"></a>
+        <a href="mailto: diegosolish@gmail.com" class="fa fa-envelope fa-2x m-2"></a>
+      </section>
     </div>
 
-    <div id="misiones" class="container p-3">
-      <h3 class="fs-1 text-center">Misiones Apolo</h3>
-      <p class="text-center fs-5">
-        A lo largo del programa Apolo, se ejecutaron con éxito múltiples
-        misiones, sin embargo, las más memorables son las siguientes:
-      </p>
+  </div>
 
-      <ol class="list-group list-group-numbered fs-5">
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">Apollo 11</div>
-            Fue el vuelo espacial estadounidense que llevó humanos por primera vez a la Luna.
-            El comandante Neil Armstrong y el piloto del módulo lunar Buzz Aldrin aterrizaron
-            el Apollo Lunar Module Eagle el 20 de julio de 1969, y Armstrong se convirtió en
-            la primera persona en pisar la superficie de la Luna.
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">Apollo 12</div>
-            El Apolo 12 habría intentado el primer alunizaje si el Apolo 11 hubiera fallado,
-            pero después del éxito de la misión de Neil Armstrong, el Apolo 12 se pospuso dos
-            meses y otras misiones del Apolo también establecieron un calendario más relajado.
-          </div>
-
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">Apollo 17</div>
-            Fue la última misión del programa Apolo de la NASA, la última vez que los humanos
-            pusieron un pie en la Luna o viajaron más allá de la órbita terrestre baja. El
-            Comandante Eugene Cernan y el Piloto del Módulo Lunar Harrison Schmitt caminaron
-            sobre la Luna, mientras que el Piloto del Módulo de Comando Ronald Evans orbitaba
-            por encima.
-          </div>
-
-        </li>
-      </ol>
+  <!-- Footer -->
+  <div class="bg-dark text-center text-white">
+    <br>
+    <div> Photo by <a
+        href="https://www.pexels.com/@kubiceknov?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Jakub
+        Novacek</a> from <a href="https://www.pexels.com/photo/time-lapse-photo-of-stars-on-night-924824/">Pexels</a>
     </div>
-
-    <div id="ubicacion">
-      <div class="container">
-        <h3 class="fs-1 text-center">Ubicación del Kennedy Space Center</h3>
-      </div>
-
-      <div class="ratio ratio-16x9" style="max-width: 75%; margin: auto;">
-        <iframe marginwidth="0"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=-80.67652344703676%2C28.601619666240577%2C-80.66582679748537%2C28.607874087995686&amp;layer=mapnik"
-          style="border: 1px solid black"></iframe>
-      </div>
-
-      <div class="container"><br />
-        <small>
-          <a href="https://www.openstreetmap.org/#map=17/28.60475/-80.67118">Ver mapa más grande</a>
-        </small>
-      </div>
-    </div>
-
-    <div id="contacto" class="container">
-      <div class="container">
-        <h3 class="fs-1 text-center">Contacto</h3>
-      </div>
-      <form>
-        <div class="mb-3">
-          <label for="remitente" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="remitente" aria-describedby="emailHelp"
-            placeholder="Escribe tu correo electrónico">
-        </div>
-        <div class="mb-3">
-          <label for="myText" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="myText" rows="3" placeholder="Escribe tu mensaje"></textarea>
-        </div>
-        <button onclick="sendMail()" class="btn btn-primary">Enviar</button>
-      </form>
-
-  </main>
-
-  <footer class="bg-light text-center text-lg-start mt-3">
+    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+        href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <br>
     <!-- Copyright -->
-    <div class="text-center p-3 bg-dark text-white">
-      © 2022 Copyright:
-      <a class="text-white" href="https://twitter.com/DiegoSolisH00">Diego Solis Higuera</a>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright: Diego Solis Higuera. All rights reserved.
     </div>
     <!-- Copyright -->
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-
-  <script>
-    function sendMail() {
-      var link = "mailto:diegosolish@gmail.com"
-        + "?cc=" + encodeURIComponent(document.getElementById('remitente').value)
-        + "&subject=" + encodeURIComponent("Apollo email")
-        + "&body=" + encodeURIComponent(document.getElementById('myText').value)
-        ;
-
-      window.location.href = link;
-    }
-  </script>
+  </div>
+  <!-- Footer -->
 </body>
 
 </html>
