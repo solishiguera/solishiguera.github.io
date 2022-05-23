@@ -43,3 +43,10 @@ button:hover#resume-btn {
 .mh-75 { 
   height: 15% !important;
 }
+
+.img { 
+  padding: 1em;
+  width: auto;
+  height: 75vh;
+  max-height: 600px;
+}
