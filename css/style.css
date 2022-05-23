@@ -1,25 +1,46 @@
-:root { 
-  --gris: #858585ea;
-  --grisDos: #9f9f9f; 
-  --grisTres: #c8c8c8; 
-  --grisCuatro: #e3e3e3; 
-  --grisCinco: 	#f1f1f1; 
-  background-color: black;
+.border-d { 
+  border: 3px solid #000000;
+}
+
+button { 
+  padding: 5%;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  width: 100%;
+}
+
+button:hover#about-btn { 
+  background-color: crimson;
+  color: white;
+  transition: ease-out 0.5s;
+}
+
+button:hover#projects-btn { 
+  background-color:forestgreen;
+  color: white;
+  transition: ease-out 0.5s;
+}
+
+button:hover#contact-btn { 
+  background-color:indigo;
+  color: white;
+  transition: ease-out 0.5s;
+}
+
+button:hover#resume-btn { 
+  background-color: blue;
+  color: white;
+  transition: ease-out 0.5s;
 }
 
 
-header { 
-  text-align: center;
-}
 
-li { 
-  margin-bottom: 10px;
-}
 
-#home {
-  background-size: cover;
-  background-attachment: fixed;
-  margin: 0;
-  padding: 0;
-  height: 85vh;
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
