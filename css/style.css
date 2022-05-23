@@ -34,13 +34,12 @@ button:hover#resume-btn {
   transition: ease-out 0.5s;
 }
 
-
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.mh-75 { 
+  height: 15% !important;
 }
