@@ -86,3 +86,7 @@ img {
   border-bottom-right-radius: 225px 25px;
   border-bottom-left-radius: 25px 300px;
 }
+
+.card-title { 
+  font-size: 2rem;
+}
