@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+.cool-font { 
+  font-family: 'Coming Soon', sans-serif;
+}
+
 #home { 
   height: 100vh;
-  font-weight: 800;
+  font-weight: bold;
 }
 
 .border-d { 
-  border: 3px solid #000000;
+  border: 5px dashed #000;
+  border-radius: 295px 15px 250px 15px/15px 250px 15px 295px;
+}
+
+.border-btn {
+  border: 3px solid #000;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; 
 }
 
 button { 
@@ -13,30 +24,31 @@ button {
   border: 1px solid black;
   color: black;
   width: 100%;
+  font-size: 25px;
 }
 
 button:hover#about-btn { 
-  background-color: crimson;
+  background-color: #4D77FF;
   color: white;
-  transition: ease-out 0.5s;
+  transition: ease-out 0.25s;
 }
 
 button:hover#projects-btn { 
-  background-color:forestgreen;
+  background-color: #FFB200;
   color: white;
-  transition: ease-out 0.5s;
+  transition: ease-out 0.25s;
 }
 
 button:hover#contact-btn { 
-  background-color:indigo;
+  background-color:#7FB77E;
   color: white;
-  transition: ease-out 0.5s;
+  transition: ease-out 0.25s;
 }
 
 button:hover#resume-btn { 
-  background-color: blue;
+  background-color: #7743DB;
   color: white;
-  transition: ease-out 0.5s;
+  transition: ease-out 0.25s;
 }
 
 .sticky {
@@ -45,13 +57,32 @@ button:hover#resume-btn {
   width: 100%;
 }
 
-.mh-75 { 
-  height: 15% !important;
+img { 
+  padding: 1em;
+  width: 100%;
+  height: 75vh;
+  max-height: 500px;
+  object-fit: cover;
 }
 
-.img { 
-  padding: 1em;
-  width: auto;
-  height: 75vh;
-  max-height: 600px;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.text { 
+  font-size: 1.3rem;
+}
+
+#about-title { 
+  border-bottom: 3px solid #4D77FF;
+  border-bottom-right-radius: 225px 25px;
+  border-bottom-left-radius: 25px 300px;
+}
+
+#project-title { 
+  border-bottom: 3px solid #FFB200;
+  border-bottom-right-radius: 225px 25px;
+  border-bottom-left-radius: 25px 300px;
 }
