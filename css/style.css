@@ -3,6 +3,10 @@
   font-family: 'Coming Soon', sans-serif;
 }
 
+html { 
+  scroll-behavior: smooth;
+}
+
 #home { 
   height: 100vh;
   font-weight: bold;
@@ -150,4 +154,9 @@ embed {
 
 .navbar { 
   font-size: 18px !important;
+}
+
+.arrow { 
+  height: 125px;
+  width: auto;
 }
