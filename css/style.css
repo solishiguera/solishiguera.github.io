@@ -19,11 +19,11 @@
 }
 
 .border-btn {
-  border: 3px solid #000;
+  border: 3px solid #000 !important;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; 
 }
 
-button { 
+.button { 
   padding: 5%;
   background-color: white;
   border: 1px solid black;
@@ -32,25 +32,25 @@ button {
   font-size: 25px;
 }
 
-button:hover#about-btn { 
+.button:hover#about-btn { 
   background-color: #4D77FF;
   color: white;
   transition: ease-out 0.25s;
 }
 
-button:hover#projects-btn { 
+.button:hover#projects-btn { 
   background-color: #FFB200;
   color: white;
   transition: ease-out 0.25s;
 }
 
-button:hover#contact-btn { 
+.button:hover#contact-btn { 
   background-color:#7FB77E;
   color: white;
   transition: ease-out 0.25s;
 }
 
-button:hover#resume-btn { 
+.button:hover#resume-btn { 
   background-color: #7743DB;
   color: white;
   transition: ease-out 0.25s;
@@ -98,6 +98,25 @@ img {
   border-bottom-left-radius: 25px 300px;
 }
 
+#resume-title { 
+  border-bottom: 3px solid #7743DB;
+  border-bottom-right-radius: 225px 25px;
+  border-bottom-left-radius: 25px 300px;
+}
+
+.resume-btn { 
+  border-bottom: 3px solid #7743DB;
+  border-radius: 295px 15px 250px 15px/15px 250px 15px 295px;
+  height: 10vh;
+  padding: 0;
+}
+
+.resume-btn:hover { 
+  background-color: #7743DB;
+  color: white;
+  border-color: #000;
+}
+
 .card-title { 
   border-bottom: 3px solid #FFB200;
   border-bottom-right-radius: 225px 25px;
@@ -122,4 +141,13 @@ img {
   background-color: #7FB77E;
   color: white;
   transition: ease-out 0.25s;
+}
+
+embed { 
+  width: 100% !important;
+  height: 70vh;
+}
+
+.navbar { 
+  font-size: 18px !important;
 }
