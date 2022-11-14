@@ -5,15 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Diego Solis</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body class="m-0 h-100">
 
   <!-- Home -->
-  <div id="home" class="container h-100 align-items-center">
+  <!-- <div id="home" class="container align-items-center">
     <div class="d-flex justify-content-center align-items-center mt-5 h-75 border-d display-1">
       Diego Solis
     </div>
@@ -32,6 +33,11 @@
         <button id="resume-btn">Resume</button>
       </div>
     </div>
+
+  </div> -->
+
+  <!-- Home -->
+  <div id="home" class="border border-danger">
 
   </div>
 
@@ -72,58 +78,80 @@
   <div id="about" class="container h-100 align-items-center">
     <div class="row text-center">
       <div class="col-lg-6 col-md-12 col-sm-12">
-          <img src="/images/diego.jpg" alt="Me and my cat" class="img border-d" />
+        <img src="/images/diego.jpg" alt="Me and my cat" class="img border-d" />
       </div>
       <div class="col-sm-6 ">
-          <p>
-            Hello! I'm Diego Solis, I am a third-year computer Science Student
-            at Tecnológico de Monterrey. I'm passionate about web development,
-            especially back-end development. I'm a former full-stack software developer intern
-            at Epicor, and I'm currently working on a school project with Wizeline!
-            Hello! I'm Diego Solis, I am a third-year computer Science Student
-            at Tecnológico de Monterrey. I'm passionate about web development,
-            especially back-end development. I'm a former full-stack software developer intern
-            at Epicor, and I'm currently working on a school project with Wizeline!
-          </p> 
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Et optio eos, debitis sint nihil laborum cum sunt a quas
+          voluptas error! Laborum ab hic cumque, harum doloremque
+          veritatis quidem vel.
+        </p>
       </div>
-    </div>  
+    </div>
   </div>
 
   <!-- Projects -->
   <div id="projects" class="container h-100 align-items-center bg-danger">
+    <div class="row bg-black">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Museum of Contemporary Art of Monterrey</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Neque quidem recusandae nostrum vel itaque
+              aperiam quisquam rem eveniet. Sequi expedita maxime, modi
+              fugit sed repellat est molestiae libero illo adipisci.
+            </p>
+            <a href="#" class="btn btn-primary">Marco</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Neque quidem recusandae nostrum vel itaque
+              aperiam quisquam rem eveniet. Sequi expedita maxime, modi
+              fugit sed repellat est molestiae libero illo adipisci.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Neque quidem recusandae nostrum vel itaque
+              aperiam quisquam rem eveniet. Sequi expedita maxime, modi
+              fugit sed repellat est molestiae libero illo adipisci.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Contact -->
   <div id="contact" class="container h-100 align-items-center">
   </div>
 
-  <!-- Resume -->
-  <div id="resume" class="container h-100 align-items-center">
-  </div>
 
-  <script>
-    window.onscroll = function () { myFunction() };
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
 
-    var navbar = document.getElementById("nav");
-    var sticky = navbar.offsetTop - 30;
-
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
 </body>
 
