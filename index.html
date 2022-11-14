@@ -9,6 +9,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
 </head>
 
@@ -71,7 +73,7 @@
   <!-- About -->
   <div id="about" class="my-5 container align-items-center cool-font">
     <div class="row">
-      <div class="col-md-5 border-d text-center align-self-center">
+      <div class="col-md-5 border-d-secondary text-center align-self-center">
         <img class="m-auto" src="/images/img-placeholder.png" alt="Picture of me" class="img border-d" />
       </div>
       <div class="col-md-7 p-lg-4">
@@ -95,46 +97,15 @@
   </div>
 
   <!-- Projects -->
-  <div id="projects" class="container h-100 align-items-center cool-font">
+  <div id="projects" class="my-5 container h-100 align-items-center cool-font">
     <div class="row">
       <h1 id="project-title" style="font-size: 60px" >Projects</h1>
         <p class="text">
-          Projects I recently worked on. You can visit my <a href="https://github.com/solishiguera">Github</a> for more details.
+          Projects I recently worked on. You can visit my <a href="https://github.com/solishiguera">Github</a> for more projects!
         </p>
     </div>
-    <!-- <div class="row">
-      <div class="col-md-4 m-0 p-1">
-        <div class="card mb-3">
-          <img class="card-img-top" src="/images/img-placeholder.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 m-0 p-1">
-        <div class="card mb-3">
-          <img class="card-img-top" src="/images/img-placeholder.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 m-0 p-1">
-        <div class="card mb-3">
-          <img class="card-img-top" src="/images/img-placeholder.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
+  
+    <ul class="nav nav-tabs " id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
         <button class="nav-link active" id="online-forum-tab" data-bs-toggle="tab" data-bs-target="#online-forum" type="button" role="tab" aria-controls="online-forum" aria-selected="true">Question forum</button>
       </li>
@@ -142,7 +113,7 @@
         <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">HR System</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact1" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+        <button class="nav-link" id="nasa-tab" data-bs-toggle="tab" data-bs-target="#nasa" type="button" role="tab" aria-controls="nasa" aria-selected="false">Nasa Hackathon</button>
       </li>
     </ul>
     <div class="tab-content" id="myTabContent">
@@ -151,10 +122,14 @@
         <div class="row m-0 pt-3 border">
           <div class="col-12">
             <h2 class="card-title m-2">Wizeline web forum</h2>
-            <p class="text m-3">Redesigned Wizeline’s employee web forum to improve user experience by reducing unanswered and repeated questions which increased usability and communication.</p>
+            <p class="text m-3">
+              Redesigned Wizeline’s employee web forum to improve user experience by reducing unanswered and repeated 
+              questions which increased usability and communication. 
+              <a href="https://github.com/solishiguera/fenrir-wizeline">Github repository</a>
+            </p>
           </div>
           <div class="col-12">
-            <img src="/images/img-placeholder.png" alt="">
+            <img class="border-d-secondary" src="/images/img-placeholder.png" alt="">
           </div>
         </div>
       </div>
@@ -173,20 +148,23 @@
             </p>
           </div>
           <div class="col-12">
-            <img src="/images/img-placeholder.png" alt="">
+            <img class="border-d-secondary" src="/images/img-placeholder.png" alt="">
           </div>
         </div>
       </div>
 
       <!-- Project 3 -->
-      <div class="tab-pane fade" id="contact1" role="tabpanel" aria-labelledby="contact-tab">
+      <div class="tab-pane fade" id="nasa" role="tabpanel" aria-labelledby="nasa-tab">
         <div class="row m-0 pt-3 border">
           <div class="col-12">
             <h2 class="card-title m-2">Aqua Decisions</h2>
-            <p class="text m-3">Hackathon project to display rainfall trends on geographical areas suitable for rainwater catchment facilities to increase water access for 25 million people in rural communities.</p>
+            <p class="text m-3">
+              Participated in Nasa Space Apps Challenge Hackathon. Developed web app to display rainfall trends on geographical areas suitable for rainwater catchment 
+              facilities to increase water access for 25 million people in rural communities. <a href="https://github.com/solishiguera/NASA-space-apps">Github repository</a>
+            </p>
           </div>
           <div class="col-12">
-            <img src="/images/img-placeholder.png" alt="">
+            <img class="border-d-secondary" src="/images/img-placeholder.png" alt="">
           </div>
         </div>
       </div>
@@ -194,7 +172,31 @@
   </div>
 
   <!-- Contact -->
-  <div id="contact" class="container h-100 align-items-center">
+  <div id="contact" class="my-5 container h-100 align-items-center cool-font">
+    <div class="row">
+      <h1 id="contact-title" style="font-size: 60px" >Contact</h1>
+      <p class="text">
+        Feel free to contact me! 
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <a href="mailto: diegosolish@gmail.com" class="fa m-auto fa-envelope fa-2x m-2"></a>
+      </div>
+      <div class="col-3">
+        <a href="https://twitter.com/DiegoSolisH00" class="fa m-auto fa-twitter fa-2x m-2"></a>
+      </div>
+      <div class="col-3">
+        <a href="https://github.com/solishiguera" class="fa m-auto fa-github fa-2x m-2"></a>
+      </div>
+      <div class="col-3">
+        <a href="https://www.linkedin.com/in/diego-solis-53b01319a/" class="fa m-auto fa-linkedin fa-2x m-2"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer my-5 container">
+    <div style="height: 110px"></div>
   </div>
 
 
