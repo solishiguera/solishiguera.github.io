@@ -160,3 +160,7 @@ embed {
   height: 125px;
   width: auto;
 }
+
+li a { 
+  text-decoration: none;
+}
