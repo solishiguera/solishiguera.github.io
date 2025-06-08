@@ -71,11 +71,8 @@ a:hover, .nav-link:hover {
   margin-bottom: 1.5rem;
 }
 
-#buttons {
-  margin-top: 2rem;
-}
 
-.button, .resume-btn {
+.button {
   background: #222;
   color: #fff;
   border: none;
@@ -89,7 +86,7 @@ a:hover, .nav-link:hover {
   outline: none;
 }
 
-.button:hover, .resume-btn:hover {
+.button:hover {
   background: #4D77FF;
   color: #fff;
   box-shadow: 0 4px 16px rgba(77,119,255,0.15);
@@ -156,7 +153,7 @@ img {
   margin-top: 2rem;
 }
 
-#about, #projects, #resume, #contact {
+#contact {
   background: transparent;
   border-radius: 12px;
   padding: 3rem 1rem;
@@ -164,7 +161,7 @@ img {
   box-shadow: 0 2px 16px rgba(0,0,0,0.10);
 }
 
-#about-title, #project-title, #resume-title, #contact-title {
+#contact-title {
   border-bottom: 2px solid #4D77FF;
   border-radius: 0;
   padding-bottom: 0.5rem;
@@ -215,11 +212,11 @@ embed {
   h1 {
     font-size: 2.5rem;
   }
-  .button, .resume-btn {
+  .button {
     font-size: 1.1rem;
     padding: 0.75rem 1.5rem;
   }
-  #about, #projects, #resume, #contact {
+  #contact {
     padding: 1.5rem 0.5rem;
   }
   img {
